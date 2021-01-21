@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Result
+<div th:object="${person}">
+    Name: <span th:text="*{name}"></span>
+    <! /i/ for hiding source of IMG>
+    Img <img th:src="@{'/i/'+ ${person.img}}" width="100"/>
+</div>
+</body>
+</html>
